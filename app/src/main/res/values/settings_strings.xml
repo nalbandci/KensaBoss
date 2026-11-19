@@ -1,0 +1,16 @@
+
+<resources>
+    <string name="settings_title">Настройки</string>
+    <string name="settings_theme_title">Тема оформления</string>
+    <string name="settings_language_title">Язык интерфейса</string>
+    <string name="settings_font_size_title">Размер шрифта</string>
+
+    <string name="font_small">Маленький</string>
+    <string name="font_standard">Стандартный</string>
+    <string name="font_large">Большой</string>
+    <string name="font_extra_large">Очень большой</string>
+
+    <string name="settings_font_preview">Пример отображения текста</string>
+    <string name="settings_save">Сохранить</string>
+    <string name="settings_cancel">Отмена</string>
+</resources>

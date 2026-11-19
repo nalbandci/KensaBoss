@@ -1,0 +1,72 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/kb_background"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/btnSectionsBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@android:drawable/ic_media_previous"
+        app:tint="@color/kb_text_primary" />
+
+    <TextView
+        android:id="@+id/tvSectionsBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/book_title_placeholder"
+        android:textColor="@color/kb_text_secondary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvSectionsPartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="4dp"
+        android:text="@string/part_title_placeholder"
+        android:textColor="@color/kb_text_secondary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvSectionsChapterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/chapter_title_placeholder"
+        android:textColor="@color/kb_text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="20dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/sectionsListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvSectionsEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="@string/sections_empty"
+        android:textColor="@color/kb_text_secondary"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

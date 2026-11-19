@@ -1,0 +1,11 @@
+
+<resources>
+    <string name="delete_book_button">Удалить книгу</string>
+    <string name="delete_book_title">Удаление книги</string>
+    <string name="delete_book_message">Вы действительно хотите удалить книгу «%1$s»?\n\nБудут удалены её главы, вопросы, варианты ответов и объяснения. Ответы на вопросы этой книги и соответствующая часть статистики занятий также будут удалены. Результаты по другим книгам сохранятся.</string>
+    <string name="delete_book_confirm">Удалить</string>
+    <string name="delete_book_cancel">Отмена</string>
+    <string name="delete_book_success">Книга «%1$s» удалена.</string>
+    <string name="delete_book_error">Не удалось удалить книгу.</string>
+    <string name="delete_book_error_details">Ошибка удаления: %1$s</string>
+</resources>

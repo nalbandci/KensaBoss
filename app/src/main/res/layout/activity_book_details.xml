@@ -1,0 +1,84 @@
+
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/kb_background"
+    android:padding="18dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <ImageButton
+            android:id="@+id/btnBookDetailsBack"
+            android:layout_width="44dp"
+            android:layout_height="44dp"
+            android:src="@android:drawable/ic_media_previous"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Back"
+            app:tint="@color/kb_text_primary" />
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/book_detail_screen_title"
+            android:textSize="21sp"
+            android:textStyle="bold"
+            android:textColor="@color/kb_text_primary"
+            android:gravity="center_vertical"
+            android:paddingStart="12dp" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tvBookDetailsTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@color/kb_text_primary"
+        android:layout_marginTop="20dp" />
+
+    <TextView
+        android:id="@+id/tvPartsDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/book_parts_heading"
+        android:textSize="14sp"
+        android:textColor="@color/kb_text_secondary"
+        android:layout_marginTop="8dp"
+        android:layout_marginBottom="16dp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/partsListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvPartsEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/book_parts_empty"
+                android:textSize="15sp"
+                android:textColor="@color/kb_text_secondary"
+                android:gravity="center"
+                android:padding="24dp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

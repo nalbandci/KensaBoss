@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/kb_background"
+    android:padding="20dp">
+
+    <!-- Кнопка возврата -->
+    <TextView
+        android:id="@+id/btnTrainingBooksBack"
+        android:layout_width="wrap_content"
+        android:layout_height="48dp"
+        android:gravity="center_vertical"
+        android:text="← Назад"
+        android:textColor="?attr/colorPrimary"
+        android:textSize="16sp"
+        android:clickable="true"
+        android:focusable="true"
+        android:paddingEnd="16dp" />
+
+    <!-- Заголовок -->
+    <TextView
+        android:id="@+id/tvTrainingBooksTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Выбор учебника"
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <!-- Описание -->
+    <TextView
+        android:id="@+id/tvTrainingBooksDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Выберите учебник, по которому хотите пройти тренировку."
+        android:textColor="?attr/colorOnBackground"
+        android:textSize="14sp"
+        android:alpha="0.75" />
+
+    <!-- Список книг -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/trainingBooksListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Сообщение, если книг нет -->
+            <TextView
+                android:id="@+id/tvTrainingBooksEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:padding="24dp"
+                android:text="Пока нет учебников для тренировки."
+                android:textColor="?attr/colorOnBackground"
+                android:textSize="15sp"
+                android:visibility="gone" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

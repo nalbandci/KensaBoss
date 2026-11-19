@@ -1,0 +1,7 @@
+<resources>
+    <string name="books_empty_message">Здесь будут отображаться добавленные учебники и их главы.</string>
+    <string name="book_author_unknown">Автор не указан</string>
+    <string name="book_parts_count">Частей: %1$d</string>
+    <string name="book_chapters_count">Глав: %1$d</string>
+    <string name="book_questions_count">Вопросов: %1$d</string>
+</resources>

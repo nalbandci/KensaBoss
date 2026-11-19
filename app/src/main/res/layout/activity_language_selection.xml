@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:fillViewport="true"
+    android:background="?android:attr/colorBackground">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        android:gravity="center"
+        android:padding="28dp">
+
+        <TextView
+            android:id="@+id/tvLanguageTitle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/language_selection_title"
+            android:textSize="27sp"
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary"
+            android:gravity="center"
+            android:layout_marginBottom="12dp" />
+
+        <TextView
+            android:id="@+id/tvLanguageDescription"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/language_selection_description"
+            android:textSize="16sp"
+            android:textColor="?android:attr/textColorSecondary"
+            android:gravity="center"
+            android:layout_marginBottom="36dp" />
+
+        <RadioGroup
+            android:id="@+id/radioGroupLanguages"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <RadioButton
+                android:id="@+id/radioArmenian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language_armenian"
+                android:textSize="19sp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/radioRussian"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language_russian"
+                android:textSize="19sp"
+                android:padding="12dp" />
+
+            <RadioButton
+                android:id="@+id/radioEnglish"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/language_english"
+                android:textSize="19sp"
+                android:padding="12dp" />
+
+        </RadioGroup>
+
+        <Button
+            android:id="@+id/btnContinue"
+            android:layout_width="match_parent"
+            android:layout_height="56dp"
+            android:text="@string/continue_button"
+            android:textSize="17sp"
+            android:layout_marginTop="32dp" />
+
+    </LinearLayout>
+
+</ScrollView>

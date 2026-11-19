@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/kb_background"
+    android:padding="20dp">
+
+    <ImageButton
+        android:id="@+id/btnTrainingBooksBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_media_previous"
+        android:contentDescription="@string/back"
+        app:tint="@color/kb_text_primary" />
+
+    <TextView
+        android:id="@+id/tvTrainingBooksTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="@string/training"
+        android:textColor="@color/kb_text_primary"
+        android:textSize="28sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvTrainingBooksDescription"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="Выберите учебник для тренировки"
+        android:textColor="@color/kb_text_secondary"
+        android:textSize="16sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="24dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/trainingBooksListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tvTrainingBooksEmpty"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/bg_card_surface"
+                android:padding="20dp"
+                android:text="Пока нет доступных учебников для тренировки."
+                android:textColor="@color/kb_text_secondary"
+                android:textSize="15sp"
+                android:gravity="center" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</LinearLayout>

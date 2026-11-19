@@ -1,0 +1,29 @@
+# Android / Gradle
+.gradle/
+**/build/
+local.properties
+.externalNativeBuild/
+.cxx/
+
+# Android Studio
+.idea/
+*.iml
+
+# Build and signing outputs
+*.apk
+*.aab
+*.jks
+*.keystore
+*.p12
+*.pfx
+*.log
+
+# OS files
+.DS_Store
+Thumbs.db
+captures/
+
+# Keep study materials out of the public source repository
+*.kbpack
+*.zip
+*.pdf

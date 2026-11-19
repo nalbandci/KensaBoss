@@ -1,0 +1,90 @@
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/kb_background"
+    android:padding="16dp">
+
+    <ImageButton
+        android:id="@+id/btnQuestionsBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:contentDescription="Back"
+        android:src="@android:drawable/ic_media_previous"
+        app:tint="@color/kb_text_primary" />
+
+    <TextView
+        android:id="@+id/tvQuestionsBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/book_title_placeholder"
+        android:textColor="@color/kb_text_secondary"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvQuestionsPartTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/part_title_placeholder"
+        android:textColor="@color/kb_text_secondary"
+        android:textSize="13sp" />
+
+    <TextView
+        android:id="@+id/tvQuestionsChapterTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="3dp"
+        android:text="@string/chapter_title_placeholder"
+        android:textColor="@color/kb_text_secondary"
+        android:textSize="14sp" />
+
+    <TextView
+        android:id="@+id/tvQuestionsSectionTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/section_title_placeholder"
+        android:textColor="@color/kb_text_primary"
+        android:textSize="22sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/tvQuestionsCount"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:text="@string/questions_count_initial"
+        android:textColor="@color/kb_text_secondary"
+        android:textSize="14sp" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginTop="16dp"
+        android:layout_weight="1"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:id="@+id/questionsListContainer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" />
+
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/tvQuestionsEmpty"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:padding="24dp"
+        android:text="@string/questions_empty"
+        android:textColor="@color/kb_text_secondary"
+        android:textSize="16sp"
+        android:visibility="gone" />
+
+</LinearLayout>

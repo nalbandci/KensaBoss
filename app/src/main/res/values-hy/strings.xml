@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">KensaBoss</string>
+
+    <string name="language_selection_title">Ընտրեք լեզուն</string>
+    <string name="language_selection_description">Ընտրեք հավելվածի միջերեսի լեզուն</string>
+    <string name="language_armenian">Հայերեն</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_english">English</string>
+    <string name="continue_button">Շարունակել</string>
+
+    <string name="home_title">KensaBoss</string>
+    <string name="home_subtitle">Նախապատրաստում բժշկական համալսարան ընդունվելու համար</string>
+    <string name="continue_learning">Շարունակել ուսուցումը</string>
+    <string name="last_studied_topic">Վերջին ուսումնասիրված թեման</string>
+
+    <string name="books">Գրքեր</string>
+    <string name="books_description">Ուսումնական նյութեր</string>
+    <string name="training">Վարժանք</string>
+    <string name="training_description">Գիտելիքների ստուգում</string>
+    <string name="reference">Տեղեկատու</string>
+    <string name="reference_description">Պատասխաններ և բացատրություններ</string>
+    <string name="statistics">Վիճակագրություն</string>
+    <string name="statistics_description">Ուսման առաջընթաց</string>
+
+    <string name="settings">Կարգավորումներ</string>
+    <string name="language">Հավելվածի լեզուն</string>
+    <string name="theme">Ձևավորման թեման</string>
+    <string name="theme_light">Բաց</string>
+    <string name="theme_dark">Մուգ</string>
+    <string name="theme_system">Ինչպես համակարգում</string>
+
+    <string name="back">Հետ</string>
+    <string name="cancel">Չեղարկել</string>
+    <string name="save">Պահպանել</string>
+    <string name="next">Հաջորդը</string>
+    <string name="check_answer">Պատասխանել</string>
+    <string name="correct_answer">Ճիշտ պատասխան</string>
+    <string name="incorrect_answer">Սխալ պատասխան</string>
+    <string name="explanation">Բացատրություն</string>
+    <string name="finish">Ավարտել</string>
+
+    <string name="book_detail_screen_title">Տվյալներ գրքի մասին</string>
+    <string name="book_parts_heading">Գրքի մասերը</string>
+    <string name="book_parts_empty">Հասանելի մասեր չկան</string>
+    <string name="chapters_heading">Գլուխներ</string>
+    <string name="chapters_empty">Հասանելի գլուխներ չկան</string>
+    <string name="book_title_placeholder">Գրքի անվանումը</string>
+    <string name="part_title_placeholder">Մասի անվանումը</string>
+    <string name="chapter_title_placeholder">Գլխի անվանումը</string>
+    <string name="section_title_placeholder">Բաժնի անվանումը</string>
+    <string name="questions_count_initial">Հարցեր՝ 0</string>
+    <string name="questions_empty">Հասանելի հարցեր չկան</string>
+    <string name="question_detail_heading">Հարց</string>
+    <string name="answer_options_heading">Պատասխանի տարբերակներ</string>
+    <string name="answer_options_empty">Այս հարցի համար պատասխանների տարբերակներ չկան։</string>
+    <string name="check_answer_action">Ստուգել պատասխանը</string>
+    <string name="sections_empty">Հասանելի բաժիններ չկան</string>
+    <string name="numeric_answer_hint">Թիվ կամ թվերի շարք՝ ստորակետերով</string>
+    <string name="explanation_source_action">Բացատրություն և աղբյուր</string>
+</resources>

@@ -1,0 +1,60 @@
+<resources>
+    <string name="app_name">KensaBoss</string>
+
+    <string name="language_selection_title">Выберите язык</string>
+    <string name="language_selection_description">Выберите язык интерфейса приложения</string>
+    <string name="language_armenian">Հայերեն</string>
+    <string name="language_russian">Русский</string>
+    <string name="language_english">English</string>
+    <string name="continue_button">Продолжить</string>
+
+    <string name="home_title">KensaBoss</string>
+    <string name="home_subtitle">Подготовка к медицинскому университету</string>
+    <string name="continue_learning">Продолжить обучение</string>
+    <string name="last_studied_topic">Последняя изученная тема</string>
+
+    <string name="books">Книги</string>
+    <string name="books_description">Учебные материалы</string>
+    <string name="training">Тренировка</string>
+    <string name="training_description">Проверка знаний</string>
+    <string name="reference">Справочник</string>
+    <string name="reference_description">Ответы и объяснения</string>
+    <string name="statistics">Статистика</string>
+    <string name="statistics_description">Прогресс обучения</string>
+
+    <string name="settings">Настройки</string>
+    <string name="language">Язык приложения</string>
+    <string name="theme">Тема оформления</string>
+    <string name="theme_light">Светлая</string>
+    <string name="theme_dark">Тёмная</string>
+    <string name="theme_system">Как в системе</string>
+
+    <string name="back">Назад</string>
+    <string name="cancel">Отмена</string>
+    <string name="save">Сохранить</string>
+    <string name="next">Далее</string>
+    <string name="check_answer">Ответить</string>
+    <string name="correct_answer">Правильный ответ</string>
+    <string name="incorrect_answer">Неправильный ответ</string>
+    <string name="explanation">Объяснение</string>
+    <string name="finish">Завершить</string>
+
+    <string name="book_detail_screen_title">Детали книги</string>
+    <string name="book_parts_heading">Части книги</string>
+    <string name="book_parts_empty">Нет доступных частей</string>
+    <string name="chapters_heading">Главы</string>
+    <string name="chapters_empty">Нет доступных глав</string>
+    <string name="book_title_placeholder">Название книги</string>
+    <string name="part_title_placeholder">Название части</string>
+    <string name="chapter_title_placeholder">Название главы</string>
+    <string name="section_title_placeholder">Название раздела</string>
+    <string name="questions_count_initial">Вопросов: 0</string>
+    <string name="questions_empty">Нет доступных вопросов</string>
+    <string name="question_detail_heading">Вопрос</string>
+    <string name="answer_options_heading">Варианты ответов</string>
+    <string name="answer_options_empty">Для этого вопроса нет вариантов ответа.</string>
+    <string name="check_answer_action">Проверить ответ</string>
+    <string name="sections_empty">Нет доступных разделов</string>
+    <string name="numeric_answer_hint">Число или ряд чисел через запятые</string>
+    <string name="explanation_source_action">Объяснение и источник</string>
+</resources>

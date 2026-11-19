@@ -1,0 +1,7 @@
+<resources>
+    <string name="books_empty_message">Your added textbooks and their chapters will appear here.</string>
+    <string name="book_author_unknown">Author not specified</string>
+    <string name="book_parts_count">Parts: %1$d</string>
+    <string name="book_chapters_count">Chapters: %1$d</string>
+    <string name="book_questions_count">Questions: %1$d</string>
+</resources>

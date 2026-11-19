@@ -1,0 +1,208 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="?android:attr/windowBackground">
+
+    <!-- Верхняя панель -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:paddingStart="16dp"
+        android:paddingEnd="16dp"
+        android:paddingTop="12dp"
+        android:paddingBottom="12dp">
+
+        <ImageButton
+            android:id="@+id/btnTrainingQuestionBack"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Назад"
+            android:src="@android:drawable/ic_media_previous"
+            android:scaleType="center"
+            app:tint="?android:attr/textColorPrimary" />
+
+        <TextView
+            android:id="@+id/tvTrainingQuestionProgress"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:text="Вопрос 1 из 20"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="?android:attr/textColorPrimary" />
+
+        <ImageButton
+            android:id="@+id/btnTrainingQuestionMenu"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="Меню"
+            android:src="@android:drawable/ic_menu_more"
+            android:scaleType="center"
+            app:tint="?android:attr/textColorPrimary" />
+
+    </LinearLayout>
+
+    <!-- Индикатор прогресса -->
+    <ProgressBar
+        android:id="@+id/pbTrainingQuestionProgress"
+        style="?android:attr/progressBarStyleHorizontal"
+        android:layout_width="match_parent"
+        android:layout_height="6dp"
+        android:layout_marginStart="16dp"
+        android:layout_marginEnd="16dp"
+        android:max="100"
+        android:progress="5" />
+
+    <!-- Основная область -->
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:fillViewport="true"
+        android:clipToPadding="false">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="20dp">
+
+            <!-- Название книги -->
+            <TextView
+                android:id="@+id/tvTrainingQuestionBookTitle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:layout_marginBottom="8dp" />
+
+            <!-- Тип вопроса -->
+            <TextView
+                android:id="@+id/tvTrainingQuestionType"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="13sp"
+                android:textStyle="bold"
+                android:textColor="?attr/colorAccent"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Текст вопроса -->
+            <TextView
+                android:id="@+id/tvTrainingQuestionText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Текст вопроса"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:textColor="?android:attr/textColorPrimary"
+                android:lineSpacingExtra="5dp"
+                android:layout_marginBottom="24dp" />
+
+            <!-- Подсказка для выбора -->
+            <TextView
+                android:id="@+id/tvTrainingQuestionInstruction"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+                android:textColor="?android:attr/textColorSecondary"
+                android:layout_marginBottom="12dp" />
+
+            <!-- Сюда Java-код добавит варианты ответов -->
+            <LinearLayout
+                android:id="@+id/trainingQuestionOptionsContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical" />
+
+            <!-- Область обратной связи -->
+            <LinearLayout
+                android:id="@+id/trainingQuestionFeedbackContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:visibility="gone"
+                android:padding="16dp"
+                android:layout_marginTop="20dp"
+                android:background="?android:attr/colorBackground">
+
+                <TextView
+                    android:id="@+id/tvTrainingQuestionFeedbackTitle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="17sp"
+                    android:textStyle="bold"
+                    android:textColor="?android:attr/textColorPrimary" />
+
+                <TextView
+                    android:id="@+id/tvTrainingQuestionFeedbackDetails"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="?android:attr/textColorPrimary"
+                    android:lineSpacingExtra="4dp"
+                    android:layout_marginTop="8dp" />
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Нижняя панель управления -->
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="16dp">
+
+        <Button
+            android:id="@+id/btnTrainingQuestionCheck"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Проверить ответ"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center_vertical"
+            android:layout_marginTop="8dp">
+
+            <Button
+                android:id="@+id/btnTrainingQuestionPrevious"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Назад"
+                android:enabled="false" />
+
+            <Space
+                android:layout_width="12dp"
+                android:layout_height="1dp" />
+
+            <Button
+                android:id="@+id/btnTrainingQuestionNext"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Далее" />
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnTrainingQuestionFinish"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Завершить тренировку"
+            android:layout_marginTop="8dp" />
+
+    </LinearLayout>
+
+</LinearLayout>

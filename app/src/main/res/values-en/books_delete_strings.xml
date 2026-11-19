@@ -1,0 +1,11 @@
+
+<resources>
+    <string name="delete_book_button">Delete book</string>
+    <string name="delete_book_title">Delete book</string>
+    <string name="delete_book_message">Are you sure you want to delete the book "%1$s"?\n\nIts parts, chapters, questions, answer options, and explanations will be deleted. Answers to questions in this book and the corresponding session statistics will also be deleted. Results for other books will be preserved.</string>
+    <string name="delete_book_confirm">Delete</string>
+    <string name="delete_book_cancel">Cancel</string>
+    <string name="delete_book_success">Book "%1$s" was deleted.</string>
+    <string name="delete_book_error">Could not delete the book.</string>
+    <string name="delete_book_error_details">Deletion error: %1$s</string>
+</resources>

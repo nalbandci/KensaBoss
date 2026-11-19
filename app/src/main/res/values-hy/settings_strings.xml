@@ -1,0 +1,16 @@
+
+<resources>
+    <string name="settings_title">Կարգավորումներ</string>
+    <string name="settings_theme_title">Ձևավորում</string>
+    <string name="settings_language_title">Ինտերֆեյսի լեզու</string>
+    <string name="settings_font_size_title">Տառաչափ</string>
+
+    <string name="font_small">Փոքր</string>
+    <string name="font_standard">Ստանդարտ</string>
+    <string name="font_large">Մեծ</string>
+    <string name="font_extra_large">Շատ մեծ</string>
+
+    <string name="settings_font_preview">Տեքստի նախադիտում</string>
+    <string name="settings_save">Պահպանել</string>
+    <string name="settings_cancel">Չեղարկել</string>
+</resources>

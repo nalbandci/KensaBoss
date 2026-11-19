@@ -1,0 +1,13 @@
+
+<resources>
+    <!-- Основные цвета -->
+    <color name="kb_primary">#356AC3</color>
+    <color name="kb_on_primary">#FFFFFF</color>
+
+    <!-- Светлая тема -->
+    <color name="kb_background">#F5F7FB</color>
+    <color name="kb_surface">#FFFFFF</color>
+    <color name="kb_text_primary">#202631</color>
+    <color name="kb_text_secondary">#687386</color>
+    <color name="kb_card_stroke">#E0E5ED</color>
+</resources>

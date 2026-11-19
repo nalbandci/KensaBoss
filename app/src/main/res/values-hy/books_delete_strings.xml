@@ -1,0 +1,11 @@
+
+<resources>
+    <string name="delete_book_button">Ջնջել գիրքը</string>
+    <string name="delete_book_title">Գրքի ջնջում</string>
+    <string name="delete_book_message">Վստա՞հ եք, որ ցանկանում եք ջնջել «%1$s» գիրքը։\n\nԿջնջվեն դրա մասերը, գլուխները, հարցերը, պատասխանների տարբերակներն ու բացատրությունները։ Կջնջվեն նաև այս գրքի հարցերին տրված պատասխանները և պարապմունքների համապատասխան վիճակագրությունը։ Մյուս գրքերի արդյունքները կպահպանվեն։</string>
+    <string name="delete_book_confirm">Ջնջել</string>
+    <string name="delete_book_cancel">Չեղարկել</string>
+    <string name="delete_book_success">«%1$s» գիրքը ջնջվեց։</string>
+    <string name="delete_book_error">Չհաջողվեց ջնջել գիրքը։</string>
+    <string name="delete_book_error_details">Ջնջման սխալ՝ %1$s</string>
+</resources>

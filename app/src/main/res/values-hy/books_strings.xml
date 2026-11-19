@@ -1,0 +1,7 @@
+<resources>
+    <string name="books_empty_message">Այստեղ կցուցադրվեն ավելացված դասագրքերն ու դրանց գլուխները։</string>
+    <string name="book_author_unknown">Հեղինակը նշված չէ</string>
+    <string name="book_parts_count">Մասեր՝ %1$d</string>
+    <string name="book_chapters_count">Գլուխներ՝ %1$d</string>
+    <string name="book_questions_count">Հարցեր՝ %1$d</string>
+</resources>

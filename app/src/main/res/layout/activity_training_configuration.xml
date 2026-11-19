@@ -1,0 +1,255 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android" xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@color/kb_background"
+    android:padding="20dp">
+
+    <!-- Верхняя панель -->
+    <ImageButton
+        android:id="@+id/btnTrainingConfigBack"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:background="?attr/selectableItemBackgroundBorderless"
+        android:src="@android:drawable/ic_media_previous"
+        android:contentDescription="@string/back"
+        app:tint="@color/kb_text_primary" />
+
+    <TextView
+        android:id="@+id/tvTrainingConfigTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:text="Настройка тренировки"
+        android:textColor="@color/kb_text_primary"
+        android:textSize="26sp"
+        android:textStyle="bold" />
+
+    <!-- Название учебника -->
+    <TextView
+        android:id="@+id/tvTrainingConfigBookTitle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/bg_card_surface"
+        android:padding="14dp"
+        android:textColor="@color/kb_text_primary"
+        android:textSize="17sp"
+        android:textStyle="bold" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="16dp"
+        android:fillViewport="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!-- Выбор глав -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Содержание тренировки"
+                android:textColor="@color/kb_text_primary"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/tvTrainingConfigChaptersDescription"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Выберите части и главы, по которым хотите тренироваться."
+                android:textColor="@color/kb_text_secondary"
+                android:textSize="14sp" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/btnTrainingSelectAll"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="Выбрать все"
+                    android:textAllCaps="false" />
+
+                <Button
+                    android:id="@+id/btnTrainingClearSelection"
+                    android:layout_width="0dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="8dp"
+                    android:layout_weight="1"
+                    android:text="Снять выбор"
+                    android:textAllCaps="false" />
+
+            </LinearLayout>
+
+            <!-- Сюда Java-код добавит части и главы -->
+            <LinearLayout
+                android:id="@+id/trainingConfigChaptersContainer"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:orientation="vertical" />
+
+            <!-- Доступные вопросы -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:background="@drawable/bg_card_surface"
+                android:orientation="vertical"
+                android:padding="16dp">
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Доступные вопросы"
+                    android:textColor="@color/kb_text_secondary"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/tvTrainingAvailableQuestions"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="6dp"
+                    android:text="0"
+                    android:textColor="@color/kb_text_primary"
+                    android:textSize="28sp"
+                    android:textStyle="bold" />
+
+            </LinearLayout>
+
+            <!-- Количество вопросов -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Количество вопросов"
+                android:textColor="@color/kb_text_primary"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <EditText
+                android:id="@+id/etTrainingQuestionCount"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/bg_card_surface"
+                android:hint="Например, 50"
+                android:inputType="number"
+                android:maxLength="5"
+                android:padding="14dp"
+                android:textColor="@color/kb_text_primary"
+                android:textColorHint="@color/kb_text_secondary"
+                android:textSize="17sp" />
+
+            <TextView
+                android:id="@+id/tvTrainingQuestionCountHint"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="6dp"
+                android:text="Количество не может превышать число доступных вопросов."
+                android:textColor="@color/kb_text_secondary"
+                android:textSize="13sp" />
+
+            <!-- Порядок вопросов -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Порядок вопросов"
+                android:textColor="@color/kb_text_primary"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgTrainingQuestionOrder"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbTrainingSequential"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="По порядку учебника"
+                    android:textColor="@color/kb_text_primary"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rbTrainingRandom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="В случайном порядке"
+                    android:textColor="@color/kb_text_primary"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <!-- Режим проверки -->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="Режим проверки ответов"
+                android:textColor="@color/kb_text_primary"
+                android:textSize="19sp"
+                android:textStyle="bold" />
+
+            <RadioGroup
+                android:id="@+id/rgTrainingFeedbackMode"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:orientation="vertical">
+
+                <RadioButton
+                    android:id="@+id/rbTrainingImmediate"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:checked="true"
+                    android:text="Сразу после каждого ответа"
+                    android:textColor="@color/kb_text_primary"
+                    android:textSize="15sp" />
+
+                <RadioButton
+                    android:id="@+id/rbTrainingDeferred"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="В конце тренировки"
+                    android:textColor="@color/kb_text_primary"
+                    android:textSize="15sp" />
+
+            </RadioGroup>
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="16dp" />
+
+        </LinearLayout>
+
+    </ScrollView>
+
+    <!-- Начало тренировки -->
+    <Button
+        android:id="@+id/btnStartTraining"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="12dp"
+        android:padding="14dp"
+        android:text="Начать тренировку"
+        android:textAllCaps="false"
+        android:textSize="17sp" />
+
+</LinearLayout>
